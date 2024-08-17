@@ -25,10 +25,10 @@ jobs:
 
     - name: Download kernel source
       run: |
-        git clone https://github.com/OnePlusOSS/android_kernel_modules_and_devicetree_oneplus_sm8650/ -b oneplus/sm8650_u_14.1.0_oneplus_ace3pro kernel_workspace --depth=1
+        git clone https://github.com/ztc1997/android_gki_kernel_5.10_common/ -b android12-5.10-2024-08 kernel_workspace --depth=1
         cd $GITHUB_WORKSPACE/kernel_workspace
         cd kernel_platform
-        git clone https://github.com/OnePlusOSS/android_kernel_oneplus_sm8650/ -b oneplus/sm8650_u_14.1.0_oneplus_ace3pro common --depth=1
+        git clone https://github.com/ztc1997/android_gki_kernel_5.10_common/ -b android12-5.10-2024-08 common --depth=1
         
     - name: Download Clang-aosp
       run: |
